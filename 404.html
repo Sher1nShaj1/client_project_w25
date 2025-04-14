@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/images/UMSI_signature_vertical_informal_solidblue.jpg">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #FFCB05, #00274C);
+      color: #00274C;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error-container {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0;
+      animation: slideDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    a {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00274C;
+      color: #FFCB05;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #001D36;
+    }
+
+    .mascot {
+      max-width: 250px;
+      margin: 2rem auto;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1>404</h1>
+    <p>Oops! The page you're looking for doesn't exist.</p>
+    <img src="images/wolverine-mascot.png" alt="UMich Wolverine Mascot" class="mascot">
+    <a href="index.html">Back to Home</a>
+  </div>
+  <footer>
+    <!-- <div class="footer-content"> -->
+    <p><strong>UMSI Student Success</strong> | Empowering students with academic, mental, and physical health resources, food and housing support, and life balance strategies.</p>
+    <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+    <!-- </div> -->
+</footer>
+<script>
+    // Dynamic year update
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

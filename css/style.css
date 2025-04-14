@@ -61,7 +61,7 @@ nav ul li a.active {
 footer{
     text-align: center;
     padding: 20px;
-    background:  #00274C;
+    /* background:  #00274C; */
     color: #FFCB05;
     /* position: fixed; */
     left: 0;
@@ -76,110 +76,128 @@ footer a{
 
 /* Tablet/Desktop View - Apply at 768px and above */
 @media (min-width: 768px) {
-    body {
-      font-size: 18px;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-  
-    header {
-      display: absolute;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 80px;
-      text-align: center;
-    }
-  
-    nav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: transparent;
-      z-index: 1000;
-    }
-  
-    nav ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      justify-items: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      background: none;
-    }
-  
-    nav ul li {
-      width: 100%;
-    }
-  
-    nav ul li a {
-      display: block;
-      padding: 12px 0;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
-  
-    nav ul li a:hover,
-    nav ul li a.active {
-      background-color: #001D36;
-    }
-  
-    main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-  
-    section, article, div {
-      background-color: #f9f9f9;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in;
-    }
-  
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 2rem;
-      background-color: transparent;
-      color: white;
-    }
-  
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  
-    h1, h2, h3 {
-      text-align: center;
-      animation: slideDown 1s ease-out;
-    }
-  
-    /* Specific layout tweaks for page_3.html */
-    #main > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  
-    /* Subtle Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  /* Text styling for larger screens */
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
-  
+  /* Header repositioned for space below fixed nav */
+  header {
+    display: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
+  }
+  /* fixed top navigation bar */
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  /* Horizontal navigation layout using CSS Grid */
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: none;
+  }
+  /* Each nav item to take full column width */
+  nav ul li {
+    width: 100%;
+  }
+  /* Nav link appearance and hover effect */
+  nav ul li a {
+    display: block;
+    padding: 12px 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  /* Styling for active or hovered nav links */
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #001D36;
+  }
+  /* Grid layout for main page content
+  Acknowledgement: Utilized the help of chat-gpt to get to this solution */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  /* Card-style styling for sections/articles/divs */
+  section, article, div {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+  }
+  /* Responsive and styled footer */
+  footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 2rem;
+  color: #FFCB05;
+  font-size: 0.9rem;
+  }
+  /* Inner container for footer content with spacing */
+  footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+  /* Reset paragraph spacing inside footer */
+  footer p {
+  margin: 0;
+  }
+/* Ensures images scale responsively */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+/* Center and animate headings 
+Acknowledgement: Utilized the help of chat-gpt to get to this solution*/
+
+  h1, h2, h3 {
+    text-align: center;
+    animation: slideDown 1s ease-out;
+  }
+
+  /* Specific layout tweaks for page_3.html 
+  Acknowledgement: Utilized the help of chat-gpt to get to this solution*/
+  #main > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Subtle Animations
+  Acknowledgement: Utilized the help of chat-gpt to get to this solution */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+}

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 3</title>
+    <title>Basic Needs</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/UMSI_signature_vertical_informal_solidblue.jpg">
 </head>
 <body>
 
@@ -25,33 +26,48 @@
     <main id="main">
         <div>
             <section>
+                <img src="images/support.png" alt="Student support">
                 <h2><a href="https://basicneeds.studentlife.umich.edu/category/critical-incident-support-conflict-management/">Critical Incident Support & Conlfict Management </a></h2>
                 <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
             </section>
         
             <section>
+                <img src="images/finance.png" alt="Financial support">
                 <h2><a href="https://basicneeds.studentlife.umich.edu/category/finance/">Finance </a></h2>
                <p>Financial resources to help with immediate and long-term needs, such as emergencies, college funding and employment.</p>
             </section>
         
             <section>
+                <img src="images/food.png" alt="Food">
                 <h2><a href="https://basicneeds.studentlife.umich.edu/category/food/">Food </a></h2>
                 <p>Services to help students maintain healthy habits, find access to food, and seek assistance when struggling to buy food.</p>
             </section>
 
             <section>
+                <img src="images/health.png" alt="Healthcare">
                 <h2><a href="https://basicneeds.studentlife.umich.edu/category/health-care/">Health Care </a></h2>
                 <p>Support for students seeking medical, dental or mental health treatment, including resources for securing health insurance and finding care providers.</p>
             </section>
 
             <section>
+                <img src="images/housingtransportation.png" alt="Housing and transportation">
                 <h2><a href="https://basicneeds.studentlife.umich.edu/category/housing-transportation/">Housing & Transportation </a></h2>
                 <p>Campus and community resources for securing housing, accessing transportation, and seeking assistance for a variety of housing needs.</p>
             </section>
         </div>
     </main>
-    <footer>
+    <!-- <footer>
         <p><a href="https://basicneeds.studentlife.umich.edu/resources">View all resources </a> | <a href="https://basicneeds.studentlife.umich.edu/contact/">Contact </a></p>
+    </footer> -->
+    <footer>
+        <!-- <div class="footer-content"> -->
+        <p><strong>UMSI Student Success</strong> | Empowering students with academic, mental, and physical health resources, food and housing support, and life balance strategies.</p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+        <!-- </div> -->
     </footer>
+    <script>
+        // Dynamic year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

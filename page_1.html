@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <title>Academic Planning</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/UMSI_signature_vertical_informal_solidblue.jpg">
 </head>
 <body>
 
     <header>
-            <a href = "#main" class="skip">Skip to Main Content</a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -20,11 +20,9 @@
             </ul>
         </nav>
         <h1>Academic Planning</h1>
+        <p>This page will serve as the repository of information you need in order to understand your MSI degree and make an academic plan.</p>
     </header>
-    <main id="main">
-        <div>
-            <p>This page will serve as the repository of information you need in order to understand your MSI degree and make an academic plan.</p>
-        </div>    
+    <main id="main">   
             <!-- Sherin Shaji -->
     
             <section>
@@ -37,6 +35,16 @@
                     <li>March 26 - March 28: Registration for graduate students begins </li>
                 </ul>
                 <p> See the <a href="https://ro.umich.edu/calendars?term=130&type%5B107%5D=107&type%5B108%5D=108&keys=">Academic Calendar </a> for additional important dates</p>
+                <h2>UMSI Events Calendar</h2>
+                <p>Check out upcoming events, workshops, and activities hosted by the School of Information.</p>
+                <iframe 
+                    src="https://calendar.google.com/calendar/u/0/embed?src=umich.edu_simhglh7ufho84fgtlgn9812m8@group.calendar.google.com&ctz=America/New_York"
+                    style="border: 0"
+                    width="100%"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no">
+                </iframe>
             </section>
 
             <section>
@@ -47,25 +55,40 @@
                     <li>Total Credits: 48 </li>
                     <li>GPA to graduate: 3.0 </li>
                 </ul>
+                <h2>Program highlights</h2>
+                <iframe 
+                width="580" 
+                height="315" 
+                src="https://www.youtube.com/embed/rH84_2ToPkY?si=00hXt-8mYdlLzxWe" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+                </iframe>
                 <h2>Course Search Help</h2>
                 <ul>
                     <li><a href="https://www.google.com/url?q=https%3A%2F%2Fatlas.ai.umich.edu%2F&sa=D&sntz=1&usg=AOvVaw1X-oILivglWP8UvZ_Ugk14">Atlas </a></li>
                     <li><a href="https://docs.google.com/spreadsheets/d/1FiG9NnyZGJdMLeuY7ZIiRMbN4LPDrx_8ZUlyRMaAT_Q/edit#gid=0">UMSI Course Catalog </a></li>
                     <li><a href="https://docs.google.com/document/d/1D8ShTox-3VLjFxu10rXeRput0uY1RPV2U9plFXhlO20/edit?usp=sharing">Fall 2024 UMSI Electives </a></li>
                 </ul>
-                
-            </section>
-        
-            <section>
                 <h2>Contact Us</h2>
-                <p>If you have any questions, feel free to reach out:</p>
-                Email: umsi.advising.msi@umich.edu
+                <p>Contact us at <a href="umsi.advising.msi@umich.edu">umsi.advising.msi@umich.edu</a></p>
             </section>
     </main>
-    <footer>
+    <!-- <footer>
         <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+    </footer> -->
+    <footer>
+        <!-- <div class="footer-content"> -->
+        <p><strong>UMSI Student Success</strong> | Empowering students with academic, mental, and physical health resources, food and housing support, and life balance strategies.</p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+        <!-- </div> -->
     </footer>
-    
+    <script>
+        // Dynamic year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

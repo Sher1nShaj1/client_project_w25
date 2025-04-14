@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Maize & Blue Cupboard</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/UMSI_signature_vertical_informal_solidblue.jpg">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         </nav>
         <h1>Maize & Blue Cupboard</h1>
         <p>An equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
-
+        <img src="images/grocerybag.png" alt="Food">
     </header>
     <main id="main">
         <div>
@@ -41,9 +42,8 @@
                 <li>Support</li>
             </ul>
             <h2>Find us at</h2>
-            420 S State St Ann Arbor, MI 48109 
-            <br><br>
-            Hours of Operation:
+            <p>S State St Ann Arbor, MI 48109 </p> 
+            <h2>Hours of Operation</h2>
             <ul>
                 <li>Sunday: 2pm-6pm</li>
                 <li>Monday - Thursday: 3pm-7pm</li>
@@ -52,13 +52,22 @@
             </ul> 
         </div> 
     </main>
-    <footer>
+    <!-- <footer>
         <p><a href="https://mbc.studentlife.umich.edu/contact">Contact Us</a> |
             <a href="https://mbc.studentlife.umich.edu/faq/">FAQs</a> |
             <a href="https://mbc.studentlife.umich.edu/category/news">News</a> 
         </p>
+    </footer> -->
+    <footer>
+        <!-- <div class="footer-content"> -->
+        <p><strong>UMSI Student Success</strong> | Empowering students with academic, mental, and physical health resources, food and housing support, and life balance strategies.</p>
+        <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+        <!-- </div> -->
     </footer>
-    
+    <script>
+        // Dynamic year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
